@@ -111,7 +111,7 @@ public class Jugador {
         int puntaje = 0;
         for (Carta carta : cartas) {
             int repeticiones = contador[carta.getNombre().ordinal()];
-            if (repeticiones == 1) { // No está en grupo
+            if (repeticiones == 1) { 
                 String nombre = carta.getNombre().name();
                 if (nombre.equals("AS") || nombre.equals("JACK") || nombre.equals("QUEEN") || nombre.equals("KING")) {
                     puntaje += 10;
